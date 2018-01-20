@@ -46,7 +46,7 @@ function onDownHandler(pnt)
 	// игра только стартовала, выведено сообщение с правилами 
 	if(gameState==0)
 	{
-		if((pnt.x>430)&&(pnt.y>340)&&(pnt.x<670)&&(pnt.y<400)) 
+		if((pnt.x>380)&&(pnt.y>510)&&(pnt.x<720)&&(pnt.y<600)) 
 		{
 			//startMsg.sendToBack();
 			startMsg.alpha=0;
@@ -531,7 +531,7 @@ function restart()
 		//game.load.image('sng', 'img/sng.png');
 		game.load.image('gOverMsg', 'img/gOverMsg.png');
 		game.load.image('balanceTxt', 'img/balanceTxt.png');
-		game.load.image('startMsg', 'img/startMsg_a.png');
+		game.load.image('startMsg', 'img/startMsgEn.png');
 		game.load.image('bouq3Gr', 'img/bouq3Gr.png');
 		game.load.image('bouq1c4lGr', 'img/bouq1c4lGr.png');
 		game.load.image('bouq1c5lGr', 'img/bouq1c5lGr.png');
@@ -725,7 +725,7 @@ function restart()
 		ico5=game.add.image(380, 270, 'ico5');
 		ico6=game.add.image(740, 270, 'ico6');
 		
-		startMsg=game.add.image(25, 135, 'startMsg');
+		
 		gOverMsg=game.add.image(375, 203, 'gOverMsg');
 		gOverMsg.alpha=0;
 		
@@ -735,6 +735,8 @@ function restart()
 		
 		profitTxt.text=profitVal;
 		remBaloonsTxt.text=packSize;
+		
+		startMsg=game.add.image(0, 94, 'startMsg');
 		
 		var xGr=baloonGroup.x;
 		
